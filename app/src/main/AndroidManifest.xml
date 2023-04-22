@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_food_waste"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_food_waste"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Food_waste_managment">
+        <activity
+            android:name=".splashscreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".noncoufood"
+            android:exported="false"
+            android:parentActivityName=".hoteldash"
+            android:label="Non Consumable Food">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".farmerdash"
+            android:exported="false"
+            android:parentActivityName=".farmerlogin"
+            android:label="Farmer Dashboard">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".farmerregister"
+            android:exported="false"
+            android:parentActivityName=".farmerlogin"
+            android:label="Farmer Register">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".farmerlogin"
+            android:exported="false"
+            android:label="Farmer Login">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".logout"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".prodetails"
+            android:exported="false"
+            android:label="Product Details">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".displaydata"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".disproduct"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".productdetails"
+            android:exported="false"
+            android:label="Product Details">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".showproduct"
+            android:exported="true"
+            android:parentActivityName=".userdash">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".product"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <activity
+            android:name=".hoteldash"
+            android:exported="true"
+            android:label="Hotel Dashboard"/>
+        <activity
+            android:name=".ngodash"
+            android:exported="true"
+            android:parentActivityName=".Ngologin"
+            android:label="NGO Dashboard">
+
+
+
+        </activity>
+
+        <activity
+            android:name=".userdash"
+            android:exported="true"
+            android:parentActivityName=".userlogin"
+            android:label="User Dashboard"/>
+        <activity
+            android:name=".Addhotelfood"
+            android:exported="true"
+            android:label="Add Hotel Food"
+            android:parentActivityName=".hoteldash"/>
+        <activity
+            android:name=".Ngoregister"
+            android:exported="true"
+            android:parentActivityName=".Ngologin"
+            android:label="NGO Register"/>
+        <activity
+            android:name=".Ngologin"
+            android:exported="true"
+            android:label="NGO Login"
+            android:parentActivityName=".MainActivity"/>
+
+        <meta-data
+            android:name="com.google.android.geo.PIT_KEY"
+            android:value="AIzaSyA5m8Qlgv-AQYprRVLXgbebLWCiclcSXKg" />
+
+        <activity
+            android:name=".userregister"
+            android:exported="true"
+            android:parentActivityName=".userlogin"
+            android:label="User Register"/>
+        <activity
+            android:name=".userlogin"
+            android:exported="true"
+            android:label="User Login"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".register"
+            android:exported="true"
+            android:label="Register"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+        </activity>
+    </application>
+
+</manifest>
